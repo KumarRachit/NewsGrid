@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- 'Font Awesome' Link -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- 'Google Font' Link -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Staatliches" rel="stylesheet">
+
+  <!-- 'CSS' Stylesheet Link -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 'Mobile' Stylesheet Link -->
+
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+
+  <!-- 'Favicon' Link.An icon associated with a particular website,typically displayed in the address bar of a browser accessing the site or next to the site name in a user's list of bookmarks. -->
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- Removing the slash(/) from the href to avoid some issues -->
+  <title>NewsGrid | Latest News</title>
+</head>
+<body>
+  <nav id="main-nav">
+    <div class="container"> <!-- 'container' to contain everything to the 'max-width' that we are gonna set -->
+      <img src="img/logo.png" alt="NewsGrid" class="logo">
+      <div class="social">
+
+        <!-- We get 'Font-Awesome' icons by writing 'fab fa-....','fa-2x' increases the size of icons.By writing 'target="_blank"' the link of social icons will open in new window -->
+
+        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x" ></i></a>
+        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x" ></i></a>
+        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x" ></i></a>
+        <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x" ></i></a>
+      </div>
+      <ul>
+
+        <!-- 'class="current"' as we want the current page to be highlighted -->
+
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Showcase -->
+
+  <header id="showcase">
+
+    <!-- Because we want to center everything so we are using a 'container' -->
+
+    <div class="container">
+
+      <!-- For the 'showcase' we want to create different 'grid-container' sp we will create one more container 'showcase-container'  -->
+
+      <div class="showcase-container">
+        <div class="showcase-content">
+
+          <!-- 'category' has 'basic styling' like 'padding,margin etc' and 'category-sports' has 'color styling' -->
+
+          <div class="category category-sports">Sports</div>
+          <h1>Some Sports Article</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quia, impedit provident modi quam natus perferendis a eaque pariatur quod ullam eius, quaerat ipsam, velit veniam sunt beatae corporis perspiciatis.</p>
+          <a href="article.html" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Articles -->
+
+  <section id="home-articles" class="p-2">
+    <!-- 'py-2' is the 'padding at the top and bottom' -->
+
+    <!-- 'First Article' will be a 'grid within grid' -->
+
+    <!-- 'container' class to 'center' everything -->
+
+    <div class="container">
+        <h2>Editor Picks</h2>
+
+        <!-- Each of the boxes will be 'articles' having a class of 'card' -->
+    
+        <div class="articles-container"> <!-- This is going to be the 'parent-container' -->
+          <article class="card"> <!-- This is going to be 'grid-item' -->
+            <img src="img/articles/ent1.jpg" alt="">
+            <div>
+              <div class="category category-ent">Entertainment</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam expedita officia minima alias molestiae quis quae, beatae natus quaerat quidem!</p>
+            </div>
+          </article>
+          <article class="card bg-dark"> <!-- This is not going to be its own grid so we will remove extra 'div' before 'entertainment div' and after 'paragraph tag' -->
+            
+            <div class="category category-sports">Sports</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam expedita officia minima alias molestiae quis quae, beatae natus quaerat quidem!</p>
+            
+          </article>
+          <article class="card"> <!-- This is not going to be its own grid so we will remove extra 'div' before 'entertainment div' and after 'paragraph tag' -->
+
+            <img src="img/articles/tech1.jpg" alt="">
+            <div class="category category-tech">Technology</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam expedita officia minima alias molestiae quis quae, beatae natus quaerat quidem!</p>
+          </article>
+          <article class="card"> <!-- This is not going to be its own grid so we will remove extra 'div' before 'entertainment div' and after 'paragraph tag' -->
+
+            <div class="category category-sports">Technology</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam expedita officia minima alias molestiae quis quae, beatae natus quaerat quidem!</p>
+            <img src="img/articles/sports1.jpg" alt="">
+          </article>
+          <article class="card"> <!-- This is not going to be its own grid so we will remove extra 'div' before 'entertainment div' and after 'paragraph tag' -->
+
+            <img src="img/articles/tech2.jpg" alt="">
+            <div class="category category-tech">Technology</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam expedita officia minima alias molestiae quis quae, beatae natus quaerat quidem!</p>
+          </article>
+          <article class="card bg-primary"> <!-- This is not going to be its own grid so we will remove extra 'div' before 'entertainment div' and after 'paragraph tag' -->
+
+            <div class="category category-sports">Sports</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam expedita officia minima alias molestiae quis quae, beatae natus quaerat quidem!</p>
+
+            <!-- The 'Last Article' will again be a 'grid within a grid' -->
+
+          </article>
+          <article class="card"> <!-- This is going to be a 'grid-container' -->
+            <div>
+              <div class="category category-ent">Entertainment</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam expedita officia minima alias molestiae quis quae, beatae natus quaerat quidem!</p>
+            </div>
+            <img src="img/articles/ent2.jpg" alt="">
+          </article>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+
+  <!-- 'Footer' is going to be the 'grid-container' -->
+
+  <footer id="main-footer" class="py-2">
+
+    <!-- 'container class' to 'center' everything and 'footer-container' will be the actual 'grid-container' -->
+
+    <div class="container footer-container">
+
+      <!-- We are going to have 5 'div' and last one will be in next line and will span all way across -->
+
+      <div>
+        <img src="img/logo_light.png" alt="News">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo totam eius eligendi pariatur, consequatur sapiente perspiciatis perferendis vero veniam?</p>
+      </div>
+    <div>
+      <h3>Email Newsletter</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <form action="">
+        <input type="email" placeholder="Enter Email">
+        <input type="submit" value="Subscribe" class="btn btn-primary">
+      </form>
+    </div>
+    <div>
+      <h3>Site Links</h3>
+      <ul class="list">
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Join Our Club</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio?</p>
+      <a href="#" class="btn btn-secondary">Join Now</a>
+    </div>
+    <div>
+      <p>
+        Copyright &copy; 2019, All Rights Reserved
+      </p>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>

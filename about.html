@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- 'Font Awesome' Link -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- 'Google Font' Link -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Staatliches" rel="stylesheet">
+
+  <!-- 'CSS' Stylesheet Link -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 'Mobile' Stylesheet Link -->
+
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+
+  <!-- 'Favicon' Link.An icon associated with a particular website,typically displayed in the address bar of a browser accessing the site or next to the site name in a user's list of bookmarks. -->
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- Removing the slash(/) from the href to avoid some issues -->
+  <title>NewsGrid | About</title>
+</head>
+<body>
+  <nav id="main-nav">
+    <div class="container"> <!-- 'container' to contain everything to the 'max-width' that we are gonna set -->
+      <img src="img/logo.png" alt="NewsGrid" class="logo">
+      <div class="social">
+
+        <!-- We get 'Font-Awesome' icons by writing 'fab fa-....','fa-2x' increases the size of icons.By writing 'target="_blank"' the link of social icons will open in new window -->
+
+        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x" ></i></a>
+        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x" ></i></a>
+        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x" ></i></a>
+        <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x" ></i></a>
+      </div>
+      <ul>
+
+        <!-- 'class="current"' as we want the current page to be highlighted -->
+
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="container"> <!-- 'container class' to 'center' everything -->
+      <div class="page-container"> <!-- 'page-container' is going to be our 'grid-container'.It's going to create a grid layout so that we have a main area and then anything else we add will just be sidebar widgets basically. -->
+        <article class="card"> <!-- 'class card' as we want 'white background' with 'padding' -->
+          <h1 class="l-heading"> <!-- 'l-heading' as we want to create 'alrger-heading' -->
+            About Our Organization
+            </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis molestias magni fugiat culpa dolorum sit esse repellendus dolor, quis ab laudantium ullam sint harum blanditiis commodi quos facere eos corrupti eius. Odit, sint saepe. Velit explicabo repellat eligendi a necessitatibus ad aut maiores quibusdam libero ipsa! Modi neque voluptatum quod.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi deleniti accusantium enim maxime qui fuga laudantium ullam nobis fugit eum odit sit aliquam totam, eveniet, libero esse nam corrupti recusandae repellat suscipit? Quam, quo inventore odio placeat assumenda laboriosam doloremque eveniet dolores et autem velit error, non corrupti? Nisi dolores sint, quam minima aut obcaecati beatae vel doloribus ipsa recusandae, ullam non molestiae. Quam id harum minima iste vel quia est doloribus facere provident molestias culpa nihil cum incidunt et officia doloremque aliquid enim, itaque nam repellat fugiat dolor dolorum accusamus libero. Odit eum laudantium deserunt unde delectus quasi dolore reiciendis, quod quaerat neque, hic eius? Facilis ratione, ipsam optio voluptatum obcaecati et natus provident porro minima sint, in ut. Optio, omnis dolor vero cupiditate libero suscipit incidunt autem nesciunt odit adipisci, fugiat commodi vel molestias aperiam quisquam et sequi nulla quasi error excepturi maiores unde! Deserunt, illum fugit.</p>
+        </article>
+        <aside class="card bg-primary">
+          <h2>Join Our Club</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sunt?</p>
+          <a href="" class="btn btn-dark btn-block">Join Now</a> <!-- 'class btn-block' as we want the button to go all the way across and want to display block -->
+        </aside>
+      </div>
+    </div>
+  </section>
+  <!-- 'Footer' is going to be the 'grid-container' -->
+
+  <footer id="main-footer" class="py-2">
+
+    <!-- 'container class' to 'center' everything and 'footer-container' will be the actual 'grid-container' -->
+    <div class="container footer-container">
+
+      <!-- We are going to have 5 'div' and last one will be in next line and will span all way across -->
+
+      <div>
+        <img src="img/logo_light.png" alt="News">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo totam eius eligendi pariatur, consequatur sapiente perspiciatis perferendis vero veniam?</p>
+      </div>
+    <div>
+      <h3>Email Newsletter</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <form action="">
+        <input type="email" placeholder="Enter Email">
+        <input type="submit" value="Subscribe" class="btn btn-primary">
+      </form>
+    </div>
+    <div>
+      <h3>Site Links</h3>
+      <ul class="list">
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Join Our Club</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio?</p>
+      <a href="#" class="btn btn-secondary">Join Now</a>
+    </div>
+    <div>
+      <p>
+        Copyright &copy; 2019, All Rights Reserved
+      </p>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>
